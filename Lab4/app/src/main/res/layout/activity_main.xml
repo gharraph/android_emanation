@@ -7,7 +7,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Request Jason Bolb"
+        android:text="Request Json Blob"
         android:id="@+id/button"
         android:layout_marginTop="50dp"
         />
