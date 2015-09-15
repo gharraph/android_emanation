@@ -20,7 +20,7 @@ public class MainActivityTest {
         MainActivity activity = Robolectric.setupActivity(MainActivity.class);
         activity.findViewById(R.id.login).performClick();
 
-        Intent expectedIntent = new Intent(activity, MainActivity.class);
+        Intent expectedIntent = new Intent(activity, LoginActivity.class);
         assertThat(shadowOf(activity).getNextStartedActivity()).isEqualTo(expectedIntent);
     }
 
