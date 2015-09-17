@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Button _button;
@@ -24,7 +25,10 @@ public class MainActivity extends AppCompatActivity {
         _button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                _staticText.setText(_editText.getText());
+                String setToText = _editText.getText().toString();
+                _staticText.setText(setToText);
+
+                Toast.makeText(MainActivity.this, setToText, Toast.LENGTH_LONG).show();
             }
         });
     }
